@@ -1,6 +1,6 @@
-const { QueryTypes } = require('sequelize');
-const fs = require('fs');
-const { Readable } = require('stream');
+const { QueryTypes } = require("sequelize");
+const fs = require("fs");
+const { Readable } = require("stream");
 
 module.exports = {
   NODE_ENV: process.env.NODE_ENV,
@@ -28,12 +28,12 @@ module.exports = {
       max: 5,
       min: 0,
       acquire: 30000,
-      idle: 10000
-    }
+      idle: 10000,
+    },
   },
 
   /** AUTH KEY */
   auth: {
-    secret: "our-secret-key1"
-  }
+    secret: "our-secret-key1",
+  },
 };
